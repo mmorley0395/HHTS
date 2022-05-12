@@ -17,9 +17,9 @@ db_connection_info = {
 connection = psycopg2.connect(**db_connection_info)
 cur = connection.cursor() 
 #another format for connection info
-conn_string = 'postgres://postgres:root@localhost/HHTS'
+conn_string = 'postgresql://postgres:root@localhost/HHTS'
 #where your HHTS excel files are located
-filepath = "C:/Users/smoran/Downloads/PublicDB_RELEASE/DVRPC HTS Database Files/"
+filepath = '/mnt/g/Shared drives/Community & Economic Development/Ferry Service Feasibility_FY22/HHTS/PublicDB_RELEASE/DVRPC HTS Database Files/'
 ######################################
 
 #get list of existing tables in DB
